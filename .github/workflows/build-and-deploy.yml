@@ -53,6 +53,8 @@ jobs:
           path: dist/
 
   deploy:
+    needs: build
+
     runs-on: ubunt-latest
 
     environment:
